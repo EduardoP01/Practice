@@ -64,8 +64,8 @@ console.log("Sesion 6 ------------------------------")
 const prompt = require('prompt-sync')();
 //var horaDia = prompt("Que horas son? ");
 //console.log(horaDia);
-/* Borrar esta para el codigo del ejercicio
 
+/*
 if (horaDia <= 3){
     console.log("Esta el equipo de Soccer entrenando");
 }
@@ -105,6 +105,8 @@ switch (deporte){
 }
 */
 
+console.log("Sesion 7 ----------------");
+
 //Arreglos
 var arregloNumerico = [1, 2, 3, 4, 5];
 console.log (arregloNumerico);
@@ -116,3 +118,88 @@ var arregloMixto = ["Hola", 20, ,"Eduardo", 10, "AIM"];
 console.log(arregloMixto);
 
 console.log( arregloTexto[0] );
+
+//Para cambiar un elemento
+arregloTexto[2] = "Rosa";
+
+//Para borrar un elemento
+delete arregloTexto[2];
+console.log(arregloTexto[2]);
+
+//Para saber cuantos elementos hay en un arreglo
+//console.log("La cantidad de elementos es: " 
+//          + arregloTexto.length () );
+
+//Agregar Elementos sl Final del Arreglo
+arregloTexto.push ("APS");
+console.log(arregloTexto);
+
+//Borrar el ultimo elemento
+arregloTexto.pop();
+console.log(arregloTexto);
+
+//Sustituir un elemento
+arregloTexto.splice(0, 1, "Kugelschreiber");
+console.log (arregloTexto);
+
+//Borrar Multiples elementos (Del 1 borrar 2)
+arregloTexto.splice(1, 3);
+console.log (arregloTexto);
+
+/*
+//Ejercicio
+//Lea 5 calificaciones por teclado y muestre promedio
+
+const prompt2 = require /('promt-sync');
+var calificaciones = [];
+calificaciones[0] = prompt("Cual es tu primera calificacion? ");
+calificaciones[1] = prompt("2nda calif? ");
+calificaciones[2] = prompt("3era calif? ");
+calificaciones[3] = prompt("4ta calif? ");
+calificaciones[4] = prompt("5ta calif? ");
+
+console.log (calificaciones);
+
+var calif1 = calificaciones[0];
+var calif2 = calificaciones[1];
+var calif3 = calificaciones[2];
+var calif4 = calificaciones[3];
+var calif5 = calificaciones[4];
+//var resultado = (calificaciones[0] + calificaciones[1] + calificaciones [2] + calificaciones[3] + calificaciones [4]) / 5;
+var resultado = ((parseInt(calif1) + parseInt(calif2) + parseInt(calif3) + parseInt(calif4) + parseInt(calif5)) / 5);
+
+console.log(resultado);
+*/
+
+//Juntar/concatenar arreglos
+var concatena1 = ["Hola", "Buenas", "Tardes"];
+var concatena2 = ["Adios", "Buenas", "Noches"];
+console.log(concatena1.concat(concatena2));
+
+//Ordenar elementos
+var Frutas1 = ["Naranja", "Fresa", "Uvas"];
+var Frutas2 = ["Naranja", "Fresa", "Durazno", "Uvas"];
+var ArregloN = [5000, 10, 200, 1000, 400];
+
+Frutas1.sort();
+Frutas2.sort();
+ArregloN.sort();
+console.log(Frutas1);
+console.log(Frutas2);
+console.log(ArregloN);
+
+//Todos los arreglos se pueden encontrar en GitHub sesion 7
+
+console.log("Repeat/Ciclos/For-------------");
+
+for(var i = 0; i < 3; i++){
+    console.log("Hola - Forma automatica / " + "i: " + i);
+}
+
+//console.log (ArregloN[3]);
+
+for(var i = 0; i < ArregloN.length; i++){
+    console.log("El valor del arreglo en la posicion "
+    + i + " es: " + ArregloN[i]);
+}
+
