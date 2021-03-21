@@ -202,5 +202,5 @@ else{
     console.log("Entraste a otro ELSE (2)");
 }
 
-var Nota5 = "Sesion 5--------------------------------";
+var Nota5 = "Conclusion Semana 1";
 console.log(Nota5);
